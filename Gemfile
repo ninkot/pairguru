@@ -12,6 +12,7 @@ gem 'decent_decoration'
 gem 'decent_exposure'
 gem 'bootstrap-sass'
 gem 'annotate', '~> 2.6.5'
+gem 'themoviedb-api'
 
 group :development do
   gem 'rails-erd'
@@ -30,6 +31,7 @@ group :development, :test do
   gem 'faker', '~> 1.4.3'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'simplecov'
+  gem 'dotenv-rails'
 end
 
 group :test do
