@@ -1,5 +1,18 @@
 %h1= movie.title
 .jumbotron
-  = movie.description
+  .row
+    %img.col-lg-4{src: movie.poster_url(:w300)}
+    %div.col-lg-8
+      .row
+        .col-lg-12= movie.description
+      %hr.jdiv
+      .row
+        .col-lg-12
+          = t('avg_rating')
+          = movie.avg_rating
+      %hr.jdiv
+      .row
+        .col-lg-12= movie.plot_overview
+
 - if user_signed_in?
   %p= link_to 'Email me details about this movie', send_info_movie_path(movie), class: 'btn btn-sm btn-default'
