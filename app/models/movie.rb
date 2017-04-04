@@ -14,4 +14,6 @@
 
 class Movie < ActiveRecord::Base
   belongs_to :genre
+
+  include ThemoviedbBase
 end
