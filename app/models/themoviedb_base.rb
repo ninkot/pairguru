@@ -1,6 +1,6 @@
 module ThemoviedbBase
   def self.config
-    @config = Tmdb::Configuration.get
+    @config ||= Tmdb::Configuration.get
   end
 
   def tmdb_movie
